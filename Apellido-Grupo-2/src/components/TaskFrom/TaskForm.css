@@ -1,5 +1,5 @@
 .modal-principal {
-    position: absolute;
+    position: fixed;
     background: rgba(59, 51, 52, 0.80);
     width: 100vw;
     height: 100vh;
@@ -11,9 +11,11 @@
     left: 0;
 }
 
+
 h1 {
     font-size: 48px;
     color: #D9D9D9;
+    line-height: 50px;
 }
 
 .buttonPrincipal {
@@ -25,8 +27,7 @@ h1 {
 }
 
 .modal {
-
-    width: 50vw;
+    width: 80vw;
     padding: 10px;
     border: 10px;
     border-radius: 10px;
@@ -35,12 +36,37 @@ h1 {
     line-height: 25px;
 }
 
+@media (min-width: 380px) {
+    .modal {
+        width: 85vw;
+    }
+}
+
+@media (min-width: 450px) {
+    .modal {
+        width: 75vw;
+    }
+}
+
+@media (min-width: 548px) {
+    .modal {
+        width: 60vw;
+    }
+}
+
+@media (min-width: 656px) {
+    .modal {
+        width: 50vw;
+    }
+}
+
 h2 {
     font-size: 48px;
 }
 .form{
     font-size: 20px;
 }
+
 .textArea {
     width: 300px;
     height: 100px;
