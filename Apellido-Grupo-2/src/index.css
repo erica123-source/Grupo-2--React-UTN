@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Keania+One&family=Roboto+Condensed:wght@300&display=swap');
 body{
-    background-color: rgb(132, 187, 132);
+    background-color: #000;
+    font-family: 'Keania One', sans-serif;
+    color: #D9D9D9;
 }

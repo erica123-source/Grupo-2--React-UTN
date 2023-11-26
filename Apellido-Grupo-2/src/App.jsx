@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { GiGymBag } from "react-icons/gi";
 import "./App.css";
 import { TaskForm, TaskList } from "./components";
 
@@ -41,16 +42,25 @@ function App() {
   return (
     <>
       <div className="app">
-        <TaskForm addTask={addTask} />
-        <form onSubmit={handleSubmit} className="formulario">
-          <label>Filtrar ejercicio: </label>
-          <input
-            placeholder=""
-            onChange={handleChangeSearchString}
-            value={searchString}
-          />
-        </form>
-        <TaskList tasks={currentTasks} deleteTask={deleteTask} />
+        <div className="banner">
+          <div className="principal-recuadro">
+            <TaskForm addTask={addTask} />
+            <br />
+            <form onSubmit={handleSubmit} className="formulario">
+              <label>Filtrar ejercicio: </label>
+              <input
+                placeholder="Abdominales"
+                onChange={handleChangeSearchString}
+                value={searchString}
+              />
+            </form>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <TaskList tasks={currentTasks} deleteTask={deleteTask} />
+        </div>
       </div>
     </>
   );

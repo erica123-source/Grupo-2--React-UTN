@@ -31,53 +31,56 @@ const TaskForm = ({ addTask }) => {
   };
   return (
     <div>
-      <button onClick={handleOpenNewTaskModal}>
-        Registra un nuevo ejercicio
+      <h1>Registra tus ejercicios:</h1>
+      <button className="buttonPrincipal" onClick={handleOpenNewTaskModal}>
+        Agregar
       </button>
       {openModal && (
         <div className="modal-principal">
           <div className="modal">
-            <h2>Ejercicio</h2>
-            <form onSubmit={handleAddNewTask}>
+            <h2>Nuevo ejercicio:</h2>
+            <form className="form" onSubmit={handleAddNewTask}>
               <div>
-                <label htmlFor="title">Titulo:</label>
+                <label htmlFor="title">Titulo: </label>
                 <input
-                  placeholder="Nombre del ejercicio"
+                  placeholder="Abdominales"
                   id="title"
                   name="title"
                 />
               </div>
+              <br />
               <div>
                 <label htmlFor="description">Descripción: </label>
-                <textarea
-                  placeholder="Describí cómo se realiza el ejercicio"
+                <textarea className="textArea"
+                  placeholder="Ejemplo: rodillas dobladas en ángulo de 60°, pies y espalda rectos en el piso, contraer el abdomen, levantar la parte superior de la espalda."
                   id="description"
                   name="description"
                 ></textarea>
               </div>
+              <br />
               <div>
                 <label htmlFor="series">Series: </label>
-                <input
+                <input className="inputNumber"
                   type="number"
                   min="1"
-                  placeholder="Cuantas series vas a realizar"
+                  placeholder="3"
                   id="series"
                   name="series"
                 ></input>
-              </div>
-              <div>
-                <label htmlFor="repeticiones">Repeticiones: </label>
-                <input
+
+                <label htmlFor="repeticiones"> Repeticiones: </label>
+                <input className="inputNumber"
                   type="number"
                   min="1"
-                  placeholder="Cuantas repeticiones vas a realizar"
+                  placeholder="30"
                   id="repeticiones"
                   name="repeticiones"
                 ></input>
               </div>
+              <br />
               <div>
-                <button onClick={handleCloseNewTaskModal}>Cancelar</button>
-                <button type="submit">Agregar</button>
+                <button className="buttonCancelar" onClick={handleCloseNewTaskModal}>Cancelar</button>
+                <button className="buttonAgregar" type="submit">Agregar</button>
               </div>
             </form>
           </div>
