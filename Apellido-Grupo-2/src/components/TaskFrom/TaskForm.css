@@ -10,14 +10,11 @@
     top: 0;
     left: 0;
 }
-
-
 h1 {
     font-size: 48px;
     color: #D9D9D9;
     line-height: 50px;
 }
-
 .buttonPrincipal {
     font-size: 32px;
     font-family: 'Keania One', sans-serif;
@@ -25,71 +22,63 @@ h1 {
     border-radius: 10px;
     background: rgba(242, 72, 34, 1);
 }
-
 .modal {
     width: 80vw;
-    padding: 10px;
+    padding: 8px;
     border: 10px;
     border-radius: 10px;
     background-color: rgba(242, 72, 34, 1);
     height: 60vh;
     line-height: 25px;
 }
-
 @media (min-width: 380px) {
     .modal {
         width: 85vw;
     }
 }
-
 @media (min-width: 450px) {
     .modal {
         width: 75vw;
     }
 }
-
 @media (min-width: 548px) {
     .modal {
         width: 60vw;
     }
 }
-
 @media (min-width: 656px) {
     .modal {
         width: 50vw;
     }
 }
-
 h2 {
     font-size: 48px;
 }
 .form{
     font-size: 20px;
 }
-
 .textArea {
     width: 300px;
     height: 100px;
 }
-
 .inputNumber {
     width: 60px;
     text-align: center;
 }
-
 .buttonCancelar {
     border-radius: 10px;
     color: #A63126;
     background-color: #000;
     font-size: 25px;
     font-family: 'Keania One', sans-serif;
+    margin-right: 20px;
 }
-
 .buttonAgregar {
     
     border-radius: 10px;
     color: #D9D9D9;
     background-color: #000;
     font-size: 25px;
-    font-family: 'Keania One', sans-serif; 
+    font-family: 'Keania One', sans-serif;
+    margin-left: 20px; 
 }
